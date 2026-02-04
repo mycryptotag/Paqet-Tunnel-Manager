@@ -69,5 +69,10 @@ If Paqet fails to install automatically during configuration
    ```
 
 
-If there is any problem, send a message to my Telegram ID:
-@behzad_developer
+## ⚠️ If There Is Any Problem...
+
+**Send a message to my Telegram ID right away:**
+
+**@behzad_developer**
+
+I'm usually online and will help you as soon as possible!
