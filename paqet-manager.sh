@@ -2,7 +2,7 @@
 
 #=================================================
 # Paqet Tunnel Manager
-# Version: 3.4
+# Version: 3.5
 # Raw packet-level tunneling for bypassing network restrictions
 # GitHub: https://github.com/hanselime/paqet
 # Design and development by: https://github.com/behzadea12 - https://t.me/behzad_developer
@@ -19,7 +19,7 @@ WHITE='\033[1;37m'
 NC='\033[0m'
 
 # Configuration
-SCRIPT_VERSION="3.4"
+SCRIPT_VERSION="3.5"
 PAQET_VERSION="v1.0.0-alpha.12"
 CONFIG_DIR="/etc/paqet"
 SERVICE_DIR="/etc/systemd/system"
@@ -42,7 +42,7 @@ show_banner() {
     echo "║     ╚═╝     ╚═╝  ╚═╝ ╚══▀▀═╝ ╚══════╝   ╚═╝                  ║"
     echo "║                                                              ║"
     echo "║          Raw Packet Tunnel - Firewall Bypass                 ║"
-    echo "║                                 Manager v3.4                 ║"
+    echo "║                                 Manager v3.5                 ║"
     echo "║                                                              ║"
     echo "║          https://t.me/behzad_developer                       ║"
     echo "║          https://github.com/behzadea12                       ║"    
@@ -1259,7 +1259,124 @@ install_bbr() {
     fi
     
     echo ""
-    read -p "Press Enter to return to main menu..."
+    read -p "Press Enter to return to menu..."
+}
+
+# Install DNS Finder
+install_dns_finder() {
+    show_banner
+    echo -e "${YELLOW}Installing DNS Finder for Iran${NC}"
+    echo ""
+    
+    echo -e "${YELLOW}This tool finds the best DNS servers for Iran by testing latency.${NC}"
+    echo -e "${YELLOW}It will help improve your internet speed and connectivity.${NC}"
+    echo ""
+    
+    read -p "Do you want to find the best DNS servers? (y/N): " confirm
+    
+    if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
+        echo -e "${YELLOW}DNS Finder installation cancelled.${NC}"
+        return
+    fi
+    
+    print_step "Downloading and running DNS Finder..."
+    
+    # Download and run DNS Finder script
+    if bash <(curl -Ls https://github.com/alinezamifar/IranDNSFinder/raw/refs/heads/main/dns.sh); then
+        print_success "DNS Finder completed successfully!"
+        echo ""
+        echo -e "${YELLOW}The tool has tested various DNS servers and shown the best options.${NC}"
+        echo -e "${YELLOW}You can now configure your system to use the recommended DNS servers.${NC}"
+    else
+        print_error "Failed to run DNS Finder"
+        echo ""
+        echo -e "${YELLOW}You can run DNS Finder manually with:${NC}"
+        echo -e "${CYAN}bash <(curl -Ls https://github.com/alinezamifar/IranDNSFinder/raw/refs/heads/main/dns.sh)${NC}"
+    fi
+    
+    echo ""
+    read -p "Press Enter to return to menu..."
+}
+
+# Install Mirror Selector
+install_mirror_selector() {
+    show_banner
+    echo -e "${YELLOW}Installing Mirror Selector for Ubuntu/Debian${NC}"
+    echo ""
+    
+    # Check if system is Ubuntu/Debian based
+    local os=$(detect_os)
+    if [[ "$os" != "ubuntu" ]] && [[ "$os" != "debian" ]]; then
+        echo -e "${RED}This tool is only for Ubuntu/Debian based systems.${NC}"
+        echo -e "${YELLOW}Your OS is: $os${NC}"
+        echo ""
+        read -p "Press Enter to return to menu..."
+        return
+    fi
+    
+    echo -e "${YELLOW}This tool finds the fastest apt repository mirror for your location.${NC}"
+    echo -e "${YELLOW}It will significantly improve package download speeds.${NC}"
+    echo ""
+    
+    read -p "Do you want to find the fastest apt mirror? (y/N): " confirm
+    
+    if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
+        echo -e "${YELLOW}Mirror Selector installation cancelled.${NC}"
+        return
+    fi
+    
+    print_step "Downloading and running Mirror Selector..."
+    
+    # Download and run Mirror Selector script
+    if bash <(curl -Ls https://github.com/alinezamifar/DetectUbuntuMirror/raw/refs/heads/main/DUM.sh); then
+        print_success "Mirror Selector completed successfully!"
+        echo ""
+        echo -e "${YELLOW}The tool has tested various mirrors and selected the fastest one.${NC}"
+        echo -e "${YELLOW}Your apt sources have been updated with the fastest mirror.${NC}"
+    else
+        print_error "Failed to run Mirror Selector"
+        echo ""
+        echo -e "${YELLOW}You can run Mirror Selector manually with:${NC}"
+        echo -e "${CYAN}bash <(curl -Ls https://github.com/alinezamifar/DetectUbuntuMirror/raw/refs/heads/main/DUM.sh)${NC}"
+    fi
+    
+    echo ""
+    read -p "Press Enter to return to menu..."
+}
+
+# Server Optimization Menu
+optimize_server() {
+    while true; do
+        show_banner
+        echo -e "${YELLOW}Server Optimization Tools${NC}"
+        echo ""
+        
+        echo -e "${CYAN}1.${NC} BBR - TCP Congestion Control Optimizer"
+        echo -e "${CYAN}2.${NC} DNS Finder - Find the best DNS servers for Iran"
+        echo -e "${CYAN}3.${NC} Mirror Selector - Find the fastest apt repository mirror"
+        echo -e "${CYAN}4.${NC} Back to Main Menu"
+        echo ""
+        
+        read -p "Select option [1-4]: " choice
+        
+        case $choice in
+            1)
+                install_bbr
+                ;;
+            2)
+                install_dns_finder
+                ;;
+            3)
+                install_mirror_selector
+                ;;
+            4)
+                return
+                ;;
+            *)
+                print_error "Invalid option"
+                ;;
+        esac
+    done
 }
 
 # Uninstall Paqet
@@ -1329,7 +1446,7 @@ main_menu() {
         echo -e "${CYAN}4.${NC} List Services"
         echo -e "${CYAN}5.${NC} Manage Service"
         echo -e "${CYAN}6.${NC} View Configuration"
-        echo -e "${CYAN}7.${NC} Install BBR (Optimize Network)"
+        echo -e "${CYAN}7.${NC} Optimize Server"
         echo -e "${CYAN}8.${NC} Uninstall Paqet"
         echo -e "${CYAN}9.${NC} Exit"
         echo ""
@@ -1359,7 +1476,7 @@ main_menu() {
                 view_config
                 ;;
             7)
-                install_bbr
+                optimize_server
                 ;;
             8)
                 uninstall_paqet
