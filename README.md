@@ -44,6 +44,25 @@ bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Mana
 11. **Enter V2Ray / OpenVPN port(s)**
     Single: `555` — Multiple: `555,666,777`
 
+
+## Network Optimization (Optional)
+Run the script:
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
+````
+
+Select **option 7**, then choose one of the following:
+1. **BBR** – TCP congestion control optimizer *(recommended for external servers)*
+2. **DNS Finder** – Find the best DNS servers for Iran *(recommended for Iran servers)*
+3. **Mirror Selector** – Find the fastest APT repository mirror *(recommended for Iran servers)*
+
+### Included Tools
+- **[BBR – TCP Congestion Control Optimizer](https://github.com/teddysun/across/)**
+- **[IranDNSFinder – Finds and configures optimal DNS servers](https://github.com/alinezamifar/IranDNSFinder)**
+- **[DetectUbuntuMirror – Selects the fastest APT mirror (Ubuntu/Debian only)](https://github.com/alinezamifar/DetectUbuntuMirror)**
+
+
+
 ## Troubleshooting: Paqet Installation Issues
 
 If Paqet fails to install automatically during configuration  
