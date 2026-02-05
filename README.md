@@ -119,3 +119,16 @@ If Paqet fails to install automatically during configuration
 **@behzad_developer**
 
 I'm usually online and will help you as soon as possible!
+
+## Requirements
+- Linux server (Ubuntu, Debian, CentOS, etc.)
+- Root access
+- `libpcap-dev`
+- `iptables`
+- `paqet`
+
+## License
+This project is licensed under the **MIT License**.
+
+## Credits
+- **[paqet](https://github.com/hanselime/paqet)** – Raw packet tunneling library by hanselime
