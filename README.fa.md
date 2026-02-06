@@ -190,31 +190,31 @@ bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Mana
 ## 📸 تصاویر اسکریپت
 
 <details>
-<summary>Main Menu</summary>
+<summary>منو اصلی</summary>
 <br>
 <img src="images/Main_Menu.png" width="800">
 </details>
 
 <details>
-<summary>Install Paqet</summary>
+<summary>منوی نصب Paqet</summary>
 <br>
 <img src="images/Install_paqet.png" width="800">
 </details>
 
 <details>
-<summary>List Services</summary>
+<summary>منو سرویس ها</summary>
 <br>
 <img src="images/List_Services.png" width="800">
 </details>
 
 <details>
-<summary>Manage Service</summary>
+<summary>منو مدیریت سرویس ها</summary>
 <br>
 <img src="images/Manage_Service.png" width="800">
 </details>
 
 <details>
-<summary>Optimize Server</summary>
+<summary>منو بهینه سازی سرور</summary>
 <br>
 <img src="images/Optimize_Server.png" width="800">
 </details>
