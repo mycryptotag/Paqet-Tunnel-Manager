@@ -55,9 +55,11 @@ bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Mana
 5. **Press Enter** *(automatic)*
 6. **Specify the port** used between the two servers (e.g. `555`)
 7. **Save the generated secret key**, then press **`Y`** to continue
-8. **Select option 1**
-9. **Select option 2**
-10. **Enter V2Ray / OpenVPN port(s)**
+8. **Select option 1 or..**
+9. **conn value** → Number of KCP connections
+10. **MTU** → Usually 1350 is fine (press Enter)
+11. **Select option 2**
+12. **Enter V2Ray / OpenVPN port(s)**
     Single: `555` — Multiple: `555,666,777`
 
 ---
@@ -75,8 +77,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Mana
 7. **Press Enter** *(automatic)*
 8. **Press Enter** *(automatic)*
 9. **Select option 1**
-10. **Select option 2**
-11. **Enter V2Ray / OpenVPN port(s)**
+10. **conn value** → Number of KCP connections
+11. **MTU** → Usually 1350 is fine (press Enter)
+12. **Select option 2**
+13. **Enter V2Ray / OpenVPN port(s)**
     Single: `555` — Multiple: `555,666,777`
 
 ---
