@@ -32,6 +32,12 @@
 bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
 ```
 
+
+> ورژن قدیمی  (3.8) - اگر با ورژن جدید مشکلی دارید میتونید از این استفاده کنید: 
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager3-8.sh)
+```
+
 سپس **گزینه 0** و بعد **گزینه 1** را برای نصب پیش‌نیازها انتخاب کنید.
 
 ---
@@ -109,10 +115,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Mana
 > طبق بازخورد کاربرانی که از این اسکریپت استفاده کرده‌اند، **گزینه 1 (fast)** در اکثر شرایط بهترین عملکرد را دارد.
 > اگر **سرور ایران شما محدودیت شبکه یا منابع** دارد، پیشنهاد می‌شود حالت‌های مختلف را تست کنید.
 > در صورتی که **دانش فنی و تجربه کافی** دارید، می‌توانید از **manual** برای تنظیم دقیق همه پارامترها استفاده کنید.
-> ورژن قدیمی  (3.8) - اگر با ورژن جدید مشکلی دارید میتونید از این استفاده کنید: 
-```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager3-8.sh)
-```
+
+
 
 ---
 
