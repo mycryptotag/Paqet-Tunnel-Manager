@@ -535,6 +535,7 @@ ExecStart=$BIN_DIR/paqet run -c $CONFIG_DIR/${config_name}.yaml
 Restart=always
 RestartSec=5
 LimitNOFILE=65535
+Environment="GOMAXPROCS=0"
 [Install]
 WantedBy=multi-user.target
 EOF
