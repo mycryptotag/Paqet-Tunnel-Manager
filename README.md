@@ -70,8 +70,6 @@ bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Mana
 10. **pcap sockbuf** → Press Enter to keep default
 11. **transport tcpbuf** → Press Enter to keep default
 12. **transport udpbuf** → Press Enter to keep default
-13. **Enter V2Ray / application port(s)**
-    Single: `9090` — Multiple: `9090,9091,9092`
 
 ---
 
