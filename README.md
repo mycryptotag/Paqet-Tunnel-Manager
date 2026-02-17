@@ -2,7 +2,9 @@
 
 Management script for **paqet**: a raw socket, KCP-based tunnel designed for firewall/DPI bypass. Supports **Kharej (external) server** and **Iran client (entry point)** configurations.
 
-To receive information and news, join the Telegram channel: @BehzadEa12
+Updates are only explained on Telegram.
+Telegram Channel:
+https://t.me/BehzadEa12
 
 ---
 
