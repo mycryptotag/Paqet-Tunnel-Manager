@@ -18,7 +18,6 @@ Updates are only explained on Telegram.
 * [Network Optimization (Optional)](#network-optimization-optional)
 * [Included Tools](#included-tools)
 * [Troubleshooting: Paqet Installation Issues](#troubleshooting-paqet-installation-issues)
-* [Need Help](#%EF%B8%8F-need-help)
 * [Requirements](#requirements)
 * [Script Screenshots](#-script-screenshots)
 * [License](#license)
