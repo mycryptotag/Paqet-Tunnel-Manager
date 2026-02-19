@@ -15,7 +15,6 @@
 * [بهینه‌سازی شبکه (اختیاری)](#بهینهسازی-شبکه-اختیاری)
 * [ابزارهای استفاده‌شده](#ابزارهای-استفادهشده)
 * [عیب‌یابی: مشکلات نصب Paqet](#عیبیابی-مشکلات-نصب-paqet)
-* [نیاز به کمک؟](#️-نیاز-به-کمک)
 * [پیش‌نیازها](#پیشنیازها)
 * [تصائیر اسکریپت](#-تصاویر-اسکریپت)
 * [لایسنس](#لایسنس)
@@ -28,13 +27,13 @@
 اسکریپت را روی **هر دو سرور** و با دسترسی **root** اجرا کنید:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager.sh)
 ```
 
 
 > ورژن قدیمی  (3.8) - اگر با ورژن جدید مشکلی دارید میتونید از این استفاده کنید: 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager3-8.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager3-8.sh)
 ```
 
 سپس **گزینه 0** و بعد **گزینه 1** را برای نصب پیش‌نیازها انتخاب کنید.
@@ -48,7 +47,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Mana
 اسکریپت را اجرا کنید:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager.sh)
 ```
 
 #### مراحل پیکربندی
@@ -73,7 +72,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Mana
 اسکریپت را اجرا کنید:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager.sh)
 ```
 #### مراحل پیکربندی
 
@@ -122,7 +121,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Mana
 اسکریپت را اجرا کنید:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager.sh)
 ```
 
 سپس **گزینه 7** را انتخاب کرده و یکی از موارد زیر را انتخاب کنید:
@@ -182,7 +181,7 @@ mkdir -p /root/paqet
 اسکریپت به‌صورت خودکار فایل موجود در `/root/paqet/` را شناسایی کرده، استخراج می‌کند و نصب را کامل می‌کند:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager.sh)
 ```
 
 ---
@@ -274,16 +273,6 @@ systemctl restart paqet-نام_کانفیگ
 
 ---
 
-## ⚠️ نیاز به کمک؟
-
-در صورت بروز هرگونه مشکل، از طریق تلگرام با من در ارتباط باشید:
-
-**@behzad_developer**
-
-معمولاً آنلاین هستم و در سریع‌ترین زمان ممکن کمکتان می‌کنم.
-
----
-
 ## پیش‌نیازها
 
 * سرور لینوکسی (Ubuntu، Debian، CentOS و ...)
@@ -332,20 +321,6 @@ systemctl restart paqet-نام_کانفیگ
 
 این پروژه تحت **لایسنس MIT** منتشر شده است.
 
----
-
-## 💖 حمایت مالی / Support / Donate
-
-اگر از **Paqet-Tunnel-Manager** استفاده می‌کنید و می‌خواهید از توسعه این پروژه حمایت کنید، می‌توانید از طریق موارد زیر کمک کنید:
-
-<details>
-<summary>💰 ارز دیجیتال / Crypto</summary>
-<br>
-
-* **Tron (TRC20):**
-  `TFYnorJt5gvejLwR8XQdjep1krS9Zw8pz3`
-
-</details>
 
 ---
 > هر حمایتی، کوچک یا بزرگ، به ادامه پروژه کمک می‌کند و انگیزه تیم توسعه را افزایش می‌دهد. 🙏
