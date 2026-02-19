@@ -3,8 +3,7 @@
 Management script for **paqet**: a raw socket, KCP-based tunnel designed for firewall/DPI bypass. Supports **Kharej (external) server** and **Iran client (entry point)** configurations.
 
 Updates are only explained on Telegram.
-Telegram Channel:
-https://t.me/BehzadEa12
+
 
 ---
 
@@ -32,7 +31,7 @@ https://t.me/BehzadEa12
 Run the script on **both servers** as **root**:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager.sh)
 ```
 
 ---
@@ -40,7 +39,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Mana
 > **Old version (3.8)** – If you encounter issues with the new version, you can use this one:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager3-8.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager3-8.sh)
 ```
 
 
@@ -55,7 +54,7 @@ Select **option 0**, then **option 1** to install prerequisites.
 Run the script:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager.sh)
 ```
 
 #### Configuration Steps
@@ -124,7 +123,7 @@ In **Step 8 (Kharej server)** and **Step 9 (Iran server)**, you can choose diffe
 Run the script:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager.sh)
 ```
 
 Select **option 7**, then choose one of the following:
@@ -168,7 +167,7 @@ mkdir -p /root/paqet
 3. **Run the manager script again**
 The script will automatically detect the file inside `/root/paqet/`, extract it, and complete the installation:
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/behzadea12/Paqet-Tunnel-Manager/main/paqet-manager.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mycryptotag/Paqet-Tunnel-Manager/main/paqet-manager.sh)
 ```
 
 ---
@@ -289,39 +288,6 @@ I am usually online and will assist you as soon as possible.
 This project is licensed under the **MIT License**.
 
 ---
-
-## 💖 Support / Donate
-
-If you are using **Paqet-Tunnel-Manager** and want to support the development of this project, you can contribute via:
-
-<summary>💰 Crypto</summary>
-<br>
-
-**Tron (TRC20):** `TFYnorJt5gvejLwR8XQdjep1krS9Zw8pz3`
-
-**Ton:** `UQBXx5-u5Wzv58BUjIKtMGKG06Je0pGUO0sQ4HFh2Y_AOXgR`
-
-**Tether:**
-
-**Trc20**
-`TFYnorJt5gvejLwR8XQdjep1krS9Zw8pz3`
-
-**Ton**
-`UQBXx5-u5Wzv58BUjIKtMGKG06Je0pGUO0sQ4HFh2Y_AOXgR`
-
-**bep20**
-`0x06B904248da14E20D3d33eb6Ab7Be282AA9e6fBe`
-
-
-**Tron (TRC20):**
-  `TFYnorJt5gvejLwR8XQdjep1krS9Zw8pz3`
-
-<a href="https://nowpayments.io/donation?api_key=4e70f48c-0593-457b-a4eb-3ec56159a0a3" target="_blank" rel="noreferrer noopener">
-    <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
-</a>
-
-
-> Any contribution, big or small, helps keep the project alive and motivates further development. 🙏
 
 ---
 
