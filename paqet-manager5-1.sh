@@ -4,7 +4,7 @@
 # Version: 5.1
 # Raw packet-level tunneling for bypassing network restrictions
 # GitHub: https://github.com/hanselime/paqet
-# Design and development by: https://github.com/behzadea12 - https://t.me/behzad_developer
+# Design and development by: https://github.com/mycryptotag
 #=================================================
 # Colors
 RED='\033[0;31m'
@@ -42,8 +42,7 @@ show_banner() {
     echo "║          Raw Packet Tunnel - Firewall Bypass                 ║"
     echo "║                                 Manager v5.1                 ║"
     echo "║                                                              ║"
-    echo "║          https://t.me/behzad_developer                       ║"
-    echo "║          https://github.com/behzadea12                       ║"    
+    echo "║          https://github.com/mycryptotag                       ║"    
     echo "║                                                              ║"
     echo "╚══════════════════════════════════════════════════════════════╝"
     echo -e "${NC}"
