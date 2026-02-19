@@ -228,17 +228,6 @@ systemctl restart paqet-your_config
 ```
 In newer script versions, duplicate ports are automatically removed.
 ---
-
-## ⚠️ Need Help?
-
-If you encounter any issues, contact me on Telegram:
-
-**[@behzad_developer](https://t.me/behzad_developer)**
-
-I am usually online and will assist you as soon as possible.
-
----
-
 ## Requirements
 
 * Linux server (Ubuntu, Debian, CentOS, etc.)
