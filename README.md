@@ -1,4 +1,4 @@
-# Paqet-Tunnel-Manager | [📄 فارسی](README.fa.md)
+# Paqet-Manager | [📄 فارسی](README.fa.md)
 
 Management script for **paqet**: a raw socket, KCP-based tunnel designed for firewall/DPI bypass. Supports **Kharej (external) server** and **Iran client (entry point)** configurations.
 
